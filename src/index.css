@@ -96,6 +96,7 @@ body {
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .screen {
