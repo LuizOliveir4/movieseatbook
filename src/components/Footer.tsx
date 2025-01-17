@@ -1,9 +1,7 @@
-import NavItem from "./NavItem"
-
 const Footer = () => {
     return(
         <footer>
-            <NavItem text="Book" navLink="/movieseatbook/createguest"></NavItem> 
+            <a href="/movieseatbook/createguest" className="btn">Book</a>
         </footer>
     )
   }
