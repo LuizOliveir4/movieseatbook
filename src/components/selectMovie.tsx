@@ -1,7 +1,6 @@
 const SelectMovie = () => {
     return(
-      <>
-      
+      <section>
         <div className="movie-container">
 
         <label htmlFor="movie">Pick a movie:</label>
@@ -30,7 +29,7 @@ const SelectMovie = () => {
       </li>
       </ul>
 
-      </>
+      </section>
     )
   }
   

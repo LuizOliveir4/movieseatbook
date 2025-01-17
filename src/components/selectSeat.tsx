@@ -1,6 +1,6 @@
 const SelectSeat = () => {
     return(
-        <>
+        <section>
             <div className="container">
 
                 <div className="screen"></div>
@@ -69,7 +69,7 @@ const SelectSeat = () => {
 
             </div>
   
-        </>
+        </section>
     )
   }
   

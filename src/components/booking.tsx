@@ -2,6 +2,7 @@ import Header from "./Header"
 import SelectMovie from "./SelectMovie"
 import SelectSeat from "./SelectSeat"
 import CalculateTotal from "./CalculateTotal"
+import Footer from "./Footer"
 
 const Booking = () => {
     return(
@@ -9,7 +10,8 @@ const Booking = () => {
             <Header/>
             <SelectMovie/>
             <SelectSeat/>
-            <CalculateTotal/> 
+            <CalculateTotal/>
+            <Footer/>
         </>
     )
   }
