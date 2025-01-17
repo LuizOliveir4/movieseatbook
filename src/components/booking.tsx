@@ -1,14 +1,15 @@
-import SelectMovie from "./selectMovie"
-import SelectSeat from "./selectSeat"
-import CalculateTotal from "./calculateTotal"
+import Header from "./Header"
+import SelectMovie from "./SelectMovie"
+import SelectSeat from "./SelectSeat"
+import CalculateTotal from "./CalculateTotal"
 
 const Booking = () => {
     return(
         <>
+            <Header/>
             <SelectMovie/>
             <SelectSeat/>
-            <CalculateTotal/>
-  
+            <CalculateTotal/> 
         </>
     )
   }

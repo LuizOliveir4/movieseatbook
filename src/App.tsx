@@ -1,14 +1,43 @@
-import { loadMovies } from './data/moviesContext.js'
 import './App.css'
-import Booking from './components/booking.js'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import Booking from './components/Booking.js'
+import Admin from './components/Admin.js'
+import CreateGuest from './components/CreateGuest.js'
+
+function Layout(){
+  return(
+    <>
+      <Outlet />
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    errorElement: <div>FEL</div>,
+    children:[
+      {
+        path:"/movieseatbook/", element: <Booking />,
+      },
+      {
+        path:"/movieseatbook/admin", element: <Admin />,
+      },
+      {
+        path:"/movieseatbook/createguest", element: <CreateGuest />,
+      }
+    ]
+  }
+])
 
 function App() {
-  let test = loadMovies()
-  console.log(test)
+
   return (
     <>
 
-      <Booking/>
+      <RouterProvider router={router}>
+
+      </RouterProvider>
 
     </>
   )
