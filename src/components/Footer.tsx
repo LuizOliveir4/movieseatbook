@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 const Footer = () => {
     return(
         <footer>
-            <a href="/movieseatbook/createguest" className="btn">Book</a>
+            <Link to="/movieseatbook/createguest" className="btn">Book</Link>
         </footer>
     )
   }

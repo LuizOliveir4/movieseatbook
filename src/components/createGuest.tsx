@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 const CreateGuest = () => {
     return(
         <section>
             <div className="movie-container">
-                <a href="/movieseatbook" className="btn">Back to Booking</a>
+                <Link to="/movieseatbook" className="btn">Back to Booking</Link>
             </div>
         
         </section>
