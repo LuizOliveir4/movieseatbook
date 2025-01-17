@@ -1,8 +1,9 @@
+import NavItem from "./NavItem"
+
 const Header = () => {
     return(
         <header>
-            <a href="/movieseatbook/admin" className="btn">Admin</a>
-  
+            <NavItem text="Admin" navLink="/movieseatbook/admin"></NavItem>
         </header>
     )
   }

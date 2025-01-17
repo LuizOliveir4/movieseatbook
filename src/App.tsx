@@ -6,6 +6,7 @@ import CreateGuest from './components/CreateGuest.js'
 
 function Layout(){
   return(
+    // exception: only Booking shows Header and Footer in this exercise
     <>
       <Outlet />
     </>
